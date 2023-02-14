@@ -1,0 +1,51 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+}
+
+img {
+    object-fit: cover;
+    max-width: 200px;
+}
+
+.left-side {}
+
+.right-side {}
+
+
+.card {
+    display: flex;
+    width: 600px;
+    max-height: 50vh;
+    background-color: white;
+}
+
+.title,
+.current-price {
+    font-family: 'Fraunces', serif;
+}
+
+.label,
+.description,
+.old-price {
+    color: hsl(228, 12%, 48%);
+}
+
+.current-price {
+    color: hsl(158, 36%, 37%);
+}
+
+.button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+}
+
+.button:hover {
+    background-color: hsl(212, 21%, 14%);
+}
