@@ -9,4 +9,4 @@ My solutions to Frontend Mentor challenges.
 <a href="https://mateszed.github.io/frontendmentor_challenges/product-preview-card-component-main/index.html">Product Preview Card Component</a>
 </li>
 
-</ul>s
+</ul>
