@@ -9,27 +9,18 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+        rel="stylesheet">
     <title>Frontend Mentor | Product preview card component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-        .attribution {
-            font-size: 11px;
-            text-align: center;
-        }
-
-        .attribution a {
-            color: hsl(228, 45%, 44%);
-        }
-    </style>
 </head>
 
 <body>
     <div class="card" role="main">
         <div class="left-side">
-           <img src="images/image-product-desktop.jpg" role="img">
         </div>
         <div class="right-side">
             <div class="label">
@@ -51,15 +42,18 @@
             <div class="old-price">
                 $169.99
             </div>
-            <button class="button" role="button">Add to Cart</button>
+            <br> <br>
+            <a href="#">
+                <div class="button" role="button"><img id="icon" src="images/icon-cart.svg" />Add to Cart</button>
+            </a>
         </div>
     </div>
-<!--
+    <div class="clear"></div>
     <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by <a href="#">Your Name Here</a>.
     </div>
-    -->
+
 </body>
 
 </html>
