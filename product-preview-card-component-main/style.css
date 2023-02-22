@@ -14,52 +14,51 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 14px;
 	font: inherit;
 	vertical-align: baseline;
     box-sizing: border-box;
 }
 
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+
+}
+
 body {
-    min-height: 100vh;
+    height: 100vh;
     display: grid;
+    grid-auto-flow: row;
     justify-content: center;
     align-items: center;
-    grid-auto-flow: row;
     font-family: 'Montserrat', sans-serif;
     background-color: hsl(30, 38%, 92%);
 }
-
-img {
-    object-fit: cover;
-    width: 100%;
-    height:100%;
-    border-radius: 10px 0 0 10px;
-}
-
-
-
 
 .card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 600px;
-    max-height: 50vh;
+    max-width: 720px;
+    max-height: 450px;
     margin: 10px;
-    
 }
 .left-side {
-    width: 300px;
-    height: 50vh;
+    width: 360px;
+    height: 450px;
+    background-image: url("images/image-product-desktop.jpg");
+    border-radius: 10px 0 0 10px;
+    background-size: cover;
 }
 
 .right-side {
-    width: 300px;
-    height: 50vh;
-    padding: 30px;
+    width: 360px;
+    height: 450px;
+    padding: 35px px 0 50px;
     background-color: white;
     border-radius: 0 10px 10px 0;
+    padding: 35px 70px 0 50px;
 }
 
 .title,
@@ -79,11 +78,11 @@ img {
 }
 
 .current-price {
-    display: inline-block;
+    display: inline;
     vertical-align: middle;
 }
 .old-price {
-    display: inline-block;
+    display: inline;
     vertical-align: middle;
     margin: 20px;
     font-size: 0.8em;
@@ -111,12 +110,57 @@ img {
     background-color: hsl(158, 36%, 37%);
     border-radius: 10px;
     border: 0;
-    padding: 10px;
+    padding: 15px;
+    text-align: center;
     color: white;
     width: 100%;
-    
 }
 
 .button:hover {
-    background-color: hsl(212, 21%, 14%);
+    background-color: #1A4031;
+    cursor: pointer;
+}
+
+#icon {
+    vertical-align: middle;
+    padding-right: 0.5em;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 10vh;
+ 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+
+@media only screen and (max-width: 760px) {
+   body {
+    grid-auto-flow: column;
+   }
+   
+    .card {
+        flex-direction: row;
+    }
+    
+    .left-side {
+        height: 225px;
+        background-image: url("images/image-product-mobile.jpg");
+        border-radius: 10px 10px 0 0;
+        background-size: cover;
+
+  }
+  .right-side {
+    border-radius: 0 0 10px 10px;
+    padding: 35px 30px 0 30px;
+    height: 400px;
+
+}
+
+
 }
