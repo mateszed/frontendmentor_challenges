@@ -105,7 +105,7 @@ body {
     font-size: 2em;
 }
 
-.button {
+.button  {
     display: block;
     background-color: hsl(158, 36%, 37%);
     border-radius: 10px;
