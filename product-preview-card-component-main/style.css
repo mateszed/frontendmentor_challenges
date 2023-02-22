@@ -20,7 +20,10 @@ time, mark, audio, video {
     box-sizing: border-box;
 }*/
 
-a, a:hover, a:focus, a:active {
+a,
+a:hover,
+a:focus,
+a:active {
     text-decoration: none;
     color: inherit;
 
@@ -44,6 +47,7 @@ body {
     max-height: 450px;
     margin: 10px;
 }
+
 .left-side {
     width: 360px;
     height: 450px;
@@ -81,6 +85,7 @@ body {
     display: inline;
     vertical-align: middle;
 }
+
 .old-price {
     display: inline;
     vertical-align: middle;
@@ -91,7 +96,7 @@ body {
 
 .label {
     text-transform: uppercase;
-    letter-spacing: 0.5em; 
+    letter-spacing: 0.5em;
     font-size: 0.7em;
 }
 
@@ -105,7 +110,7 @@ body {
     font-size: 2em;
 }
 
-.button  {
+.button {
     display: block;
     background-color: hsl(158, 36%, 37%);
     border-radius: 10px;
@@ -130,7 +135,7 @@ body {
     font-size: 11px;
     text-align: center;
     margin-top: 10vh;
- 
+
 }
 
 .attribution a {
@@ -140,25 +145,25 @@ body {
 
 
 @media only screen and (max-width: 760px) {
-   body {
-    grid-auto-flow: column;
-   }
-   
+    body {
+        grid-auto-flow: column;
+    }
+
     .card {
         flex-direction: row;
     }
-    
+
     .left-side {
         height: 225px;
         background-image: url("images/image-product-mobile.jpg");
         border-radius: 10px 10px 0 0;
         background-size: cover;
+    }
 
-  }
-  .right-side {
-    border-radius: 0 0 10px 10px;
-    padding: 35px 30px 0 30px;
-    height: 400px;
+    .right-side {
+        border-radius: 0 0 10px 10px;
+        padding: 35px 30px 0 30px;
+        height: 400px;
 
-}
+    }
 }
