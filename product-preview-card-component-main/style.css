@@ -43,13 +43,13 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 720px;
+    max-width: 600px;
     max-height: 450px;
     margin: 10px;
 }
 
 .left-side {
-    width: 360px;
+    width: 300px;
     height: 450px;
     background-image: url("images/image-product-desktop.jpg");
     border-radius: 10px 0 0 10px;
@@ -57,7 +57,7 @@ body {
 }
 
 .right-side {
-    width: 360px;
+    width: 300px;
     height: 450px;
     padding: 35px px 0 50px;
     background-color: white;
@@ -144,7 +144,7 @@ body {
 
 
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 742px) {
     body {
         grid-auto-flow: column;
     }
